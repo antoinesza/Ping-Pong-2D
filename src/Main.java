@@ -16,4 +16,16 @@ public class Main
 
         fenetre.setVisible(true);
     }
+
+    public int getJoueurX()
+    {
+        return JoueurX;
+    }
+
+    public int getJoueurY()
+    {
+        return JoueurY;
+    }
 }
+
+//https://www.youtube.com/watch?v=zxe7dNoKkHc
