@@ -16,6 +16,7 @@ public class ObjetsJeu extends JPanel
         joueurY = 235;
 
         ennemiX=  744;
+        ennemiY=  235;
     }
 
     public void paintComponent(Graphics g)
