@@ -12,7 +12,7 @@ public class Main
         fenetre.setSize(800, 600);
         fenetre.setResizable(false);
         fenetre.setLocationRelativeTo(null);
-
+        fenetre.setContentPane(panel);
 
         fenetre.setVisible(true);
     }
@@ -28,4 +28,5 @@ public class Main
     }
 }
 
-//https://www.youtube.com/watch?v=zxe7dNoKkHc
+
+// https://www.youtube.com/watch?v=zxe7dNoKkHc&t=119s

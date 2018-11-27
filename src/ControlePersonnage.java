@@ -9,16 +9,27 @@ public class ControlePersonnage implements KeyListener
 
         if (e.getKeyCode() == KeyEvent.VK_UP)
         {
-            y -= 10;
-            Main.panel.se
+            if (y > 2)
+            {
+                y -= 10;
+                Main.panel.setJoueurY(y);
+                Main.panel.repaint();
+            }
         }
 
+        if (e.getKeyCode() == KeyEvent.VK_DOWN)
+        {
+            y += 10;
+            Main.panel.setJoueurY(y);
+            Main.panel.repaint();
+        }
     }
 
     public void KeyReleased(KeyEvent arg0)
     {
 
     }
+
     public void KeyTyped(KeyEvent arg0)
     {
 

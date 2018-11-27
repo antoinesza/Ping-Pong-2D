@@ -17,6 +17,10 @@ public class ObjetsJeu extends JPanel
 
         ennemiX=  744;
         ennemiY=  235;
+
+        this.setFocusable(true);
+        this.requestFocusInWindow();
+        this.addKeyListener(new ControlePersonnage());
     }
 
     public void paintComponent(Graphics g)
@@ -29,5 +33,20 @@ public class ObjetsJeu extends JPanel
 
         g.setColor(Color.GREEN);
         g.fillRect(ennemiX, ennemiY, 40, 100);
+    }
+
+    public int getJoueurX()
+    {
+        return joueurX;
+    }
+
+    public int getEnnemiY()
+    {
+        return joueurY
+    }
+
+    public void setJoueurX(int joueurX)
+    {
+
     }
 }
